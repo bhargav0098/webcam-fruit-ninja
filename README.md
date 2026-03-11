@@ -52,22 +52,15 @@ python -m src.main
 
 ## Project Structure
 
-webcam-fruit-ninja
-│
-├── LICENSE
-├── README.md
-├── requirements.txt
-│
-├── assets
-│   └── (fruit images, bomb, splash, life icons)
-│
-└── src
-    ├── asset_utils.py
-    ├── config.py
-    ├── game_objects.py
-    ├── hand_tracker.py
-    ├── main.py
-    ├── ui_overlay.py
-    └── __init__.py
 
-EOF
+├── assets/              # Auto-generated PNG sprites (created on first run)
+├── requirements.txt
+├── README.md
+└── src/
+    ├── asset_utils.py   # Ensures sprites exist and loads them with alpha
+    ├── config.py        # Tunable gameplay constants
+    ├── game_objects.py  # Dataclasses + spawn helpers
+    ├── hand_tracker.py  # MediaPipe wrapper for index-finger detection
+    ├── ui_overlay.py    # HUD drawing helpers
+    └── main.py          # Game loop, physics, UI, gesture detection
+
