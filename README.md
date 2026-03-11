@@ -51,8 +51,8 @@ pip install -r requirements.txt
 python -m src.main
 
 ## Project Structure
-
-
+```
+.
 ├── assets/              # Auto-generated PNG sprites (created on first run)
 ├── requirements.txt
 ├── README.md
@@ -63,4 +63,4 @@ python -m src.main
     ├── hand_tracker.py  # MediaPipe wrapper for index-finger detection
     ├── ui_overlay.py    # HUD drawing helpers
     └── main.py          # Game loop, physics, UI, gesture detection
-
+```
